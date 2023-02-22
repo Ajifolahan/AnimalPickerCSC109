@@ -15,7 +15,7 @@ while (!validResponse) {
         System.out.println("Cat ASCII Code here");
         validResponse = true;
     }  else {
-        System.out.println("Wrong Input!!!");
+        System.out.println("Error: Wrong Input!!!");
     }
 
     }
