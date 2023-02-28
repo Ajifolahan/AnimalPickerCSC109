@@ -24,8 +24,11 @@ public class AnimalPicker {
         System.out.println("Duck ACII Code here");
         System.out.println("    __\n___( o)>\n\\ <_. )\n `---\' ");
         validResponse = true;
-    }
-    else {
+    } else if(response.equalsIgnoreCase("Pig") || response.equals("5")){
+        System.out.println("Pig ACII Code here");
+        System.out.println(" _____  \n^..^     \\9\n(oo)_____/ \n   WW  WW");
+        validResponse = true;
+    } else {
         System.out.println("Wrong Input");
     }
 
