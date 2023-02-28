@@ -5,8 +5,8 @@ public class AnimalPicker {
         Scanner scanner = new Scanner(System.in);
         boolean validResponse = false;
         while (!validResponse) {
-    System.out.println("What animal would you like to see? \n1.Dog \n2.Cat \n3.Fish");
-    System.out.println("Please enter in the values 1-3 or the name of the animal you would like to see");
+    System.out.println("What animal would you like to see? \n1.Dog \n2.Cat \n3.Fish \n4.Duck");
+    System.out.println("Please enter in the values 1-4 or the name of the animal you would like to see");
     String response = scanner.nextLine();
     if (response.equalsIgnoreCase("Dog") || response.equals("1")) {
         System.out.println("Dog ASCII Code here");
@@ -20,7 +20,12 @@ public class AnimalPicker {
         System.out.println("Fish ASCII Code here");
         System.out.println("|\\   \\\\\\\\__     o\n| \\_/    o \\    o \n> _   (( <_  oo  \n| / \\__+___/      \n|/     |/");
         validResponse = true;
-    } else {
+    } else if(response.equalsIgnoreCase("Duck") || response.equals("4")){
+        System.out.println("Duck ACII Code here");
+        System.out.println("    __\n___( o)>\n\\ <_. )\n `---\' ");
+        validResponse = true;
+    }
+    else {
         System.out.println("Wrong Input");
     }
 
